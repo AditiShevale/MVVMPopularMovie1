@@ -15,6 +15,7 @@ public interface ApiInterface {
     Call<Example> getPopularMovies(@Query("api_key") String apiKey);
 
     @GET("movie/{filter}")
-    Call<Example> getMovies(@Path("filter") String filter, @Query("api_key") String apiKey);
+    Call<Example> getMovies(@Path("filter") String filter, @Query("api_key")
+            String apiKey);
 
 }
